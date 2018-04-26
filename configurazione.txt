@@ -1,0 +1,31 @@
+#define TABLE               "allievi"
+#define TABLE_FNAME         "std_nome"
+#define TABLE_SNAME         "std_cognome"
+#define TABLE_LUOGONASCITA  "std_luogonascita"
+
+
+
+/*
+ * Cambiare TYPE_DB e driver_db per tipi database diversi e se necessario nome database, user e password
+ * Lista type db control in program
+ * 0 = QSQLITE  SQlite versione 3
+ * 1 = QODBC x  access .mdb
+ * 2 = QODBC x  access .accdb
+ * 3 = QSQLITE2 SQlite versione 2
+ * 4 = QDB2     IBM DB2 (version 7.1 and above)
+ * 5 = QMYSQL   MySQL
+ * 6 = QOCI     Oracle Call Interface Driver
+ * 7 = QPSQL    PostgreSQL (versions 7.3 and above)
+ */
+#define TYPE_DB 1
+const QString driver_db     = "QODBC";
+const QString name_db       = "dbaccess_scuola.mdb";
+const QString hostname_db   = "";
+const QString path_db       = "C:/Generale/Dropbox/QtApplicazioni/all_database/";
+const QString path_and_name_db = path_db + name_db;
+const QString user_db       = "";
+const QString pass_db       = "";
+const QString port_db       = "";
+const QString conn_db       = ""; // setConnectOptions
+
+
